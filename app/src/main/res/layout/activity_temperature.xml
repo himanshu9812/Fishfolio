@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TemperatureActivity"
+    style="@style/BACKGROUND">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center"
+        style="@style/TEXT_COLOR"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
+
+    <com.ekn.gruzer.gaugelibrary.HalfGauge
+        android:id="@+id/halfGauge"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#888888"/>
+
+    <LinearLayout
+        android:id="@+id/highTempBox"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="HIGH"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            style="@style/TEXT_COLOR"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:src="@drawable/temperature_icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/tempHighValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/TEXT_COLOR"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=" 1. High temperatures reduce oxygen levels, causing fish to struggle to breathe.
+\n\n 2. Fish may become more active, leading to increased stress and energy consumption.
+\n\n 3. Elevated temperatures can weaken immune systems, making fish more prone to disease."
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="11dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            style="@style/TEXT_COLOR"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/normalTempBox"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NORMAL"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            style="@style/TEXT_COLOR"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:src="@drawable/temperature_icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/tempNormalValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="25 °C"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/TEXT_COLOR"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=" 1. Fish maintain normal activity levels, reducing stress and promoting overall health.
+\n\n 2. Optimal temperature supports proper metabolism and digestion in fish.
+\n\n 3. Stable temperatures ensure balanced oxygen levels, supporting healthy breathing."
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="11dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            style="@style/TEXT_COLOR"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lowTempBox"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="LOW"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            style="@style/TEXT_COLOR"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:src="@drawable/temperature_icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/tempLowValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="25 °C"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/TEXT_COLOR"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=" 1. Fish may become lethargic and less active, slowing down their metabolism.
+\n\n 2. Cold temperatures can weaken the immune system, making fish more prone to diseases.
+\n\n 3. Reduced water temperature decreases oxygen absorption, affecting breathing."
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="11dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            style="@style/TEXT_COLOR"/>
+
+    </LinearLayout>
+
+</LinearLayout>

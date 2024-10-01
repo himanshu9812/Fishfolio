@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="15dp"
+                android:paddingStart="20dp"
+                style="@style/TEXT_COLOR"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    style="@style/SENSOR_CONTAINER">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/EDIT_PROFILE_ICON"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="EDIT PROFILE"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            style="@style/TEXT_COLOR"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    style="@style/SENSOR_CONTAINER">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        tools:ignore="NestedWeights">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/changeModeSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:scaleY="1.5"
+                            android:scaleX="1.5"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="DARK MODE"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            style="@style/TEXT_COLOR"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                style="@style/SETTINGS_BTN_CONTAINER"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnPrivacyPolicy"
+                    android:layout_width="360dp"
+                    android:layout_height="60dp"
+                    android:text="PRIVACY &amp;  POLICY"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="20dp"
+                    android:gravity="left|center"
+                    style="@style/PRIVACY_POLICY_BTN"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:id="@+id/btnTermsConditions"
+                    android:layout_width="360dp"
+                    android:layout_height="60dp"
+                    android:text="TERMS &amp; CONDITIONS"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="20dp"
+                    android:gravity="left|center"
+                    style="@style/TERMS_CONDITIONS_BTN"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:id="@+id/btnAboutUs"
+                    android:layout_width="360dp"
+                    android:layout_height="60dp"
+                    android:text=" ABOUT US"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="20dp"
+                    android:gravity="left|center"
+                    style="@style/ABOUT_US_BTN"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:id="@+id/btnFAQ"
+                    android:layout_width="360dp"
+                    android:layout_height="60dp"
+                    android:text="FAQ"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="20dp"
+                    android:gravity="left|center"
+                    style="@style/FAQ_BTN"/>
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnAccountLogout"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="LogOut"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:backgroundTint="#FF0000"
+                style="@style/LOGOUT_BTN"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Fishfolio" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Fishfolio" parent="Base.Theme.Fishfolio" />
+
+    <style name="BACKGROUND">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="SENSOR_CONTAINER">
+        <item name="android:background">@drawable/sensor_container_lightmode</item>
+    </style>
+
+    <style name="TEXT_COLOR">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PROFILE_HEADER_BG">
+        <item name="android:background">@drawable/profile_header_bg_lightmode</item>
+    </style>
+
+    <style name="NAV_BAR_BG">
+        <item name="android:background">@drawable/bottom_nav_bg_lightmode</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="itemIconTint">@color/black</item>
+        <item name="android:padding">0dp</item>  <!-- Remove padding -->
+        <item name="android:layout_margin">0dp</item>  <!-- Remove margin -->
+    </style>
+
+    <style name="PROFILE_TEXTBOX_BG">
+        <item name="android:background">@drawable/profile_header_bg_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LOGIN_TEXTBOX_BG">
+        <item name="android:background">@drawable/profile_header_bg_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="EMAIL_BOX">
+        <item name="android:background">@drawable/profile_header_bg_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:drawableLeft">@drawable/email_icon_lightmode</item>
+    </style>
+
+    <style name="PASSWORD_BOX">
+        <item name="android:background">@drawable/profile_header_bg_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:drawableLeft">@drawable/password_icon_lightmode</item>
+    </style>
+
+    <style name="GENDER_BOX">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:drawableLeft">@drawable/gender_icon_lightmode</item>
+    </style>
+
+    <style name="NAME_BOX">
+        <item name="android:background">@drawable/profile_header_bg_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:drawableLeft">@drawable/name_icon_lightmode</item>
+    </style>
+
+    <style name="PRIVACY_POLICY_BTN">
+        <item name="android:backgroundTint">#002B2D30</item>
+        <item name="android:drawableLeft">@drawable/privacy_policy_icon_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TERMS_CONDITIONS_BTN">
+        <item name="android:backgroundTint">#002B2D30</item>
+        <item name="android:drawableLeft">@drawable/privacy_policy_icon_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ABOUT_US_BTN">
+        <item name="android:backgroundTint">#002B2D30</item>
+        <item name="android:drawableLeft">@drawable/about_us_icon_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FAQ_BTN">
+        <item name="android:backgroundTint">#002B2D30</item>
+        <item name="android:drawableLeft">@drawable/faq_icon_lightmode</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SIGNIN_BTN">
+        <item name="android:backgroundTint">#2196F3</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SIGNUP_BTN">
+        <item name="android:backgroundTint">#2196F3</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LOGOUT_BTN">
+        <item name="android:backgroundTint">#FF3B3B</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">15dp</item>
+    </style>
+
+    <style name="SETTINGS_BTN_CONTAINER">
+        <item name="android:background">@drawable/settings_btn_container_lightmode</item>
+    </style>
+
+    <style name="GENDER_CHECKBOX">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:buttonTint">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="EDIT_PROFILE_ICON">
+        <item name="android:background">@drawable/edit_profile_icon_lightmode</item>
+    </style>
+
+    <style name="EDIT_PHOTO_ICON">
+        <item name="android:backgroundTint">#58A6FF</item>
+        <item name="android:shape">oval</item>
+    </style>
+</resources>

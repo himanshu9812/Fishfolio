@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutUsActivity"
+    style="@style/BACKGROUND">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <!-- App Icon -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/app_icon"
+                android:contentDescription="App Icon" />
+
+            <!-- App Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fishfolio"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                style="@style/TEXT_COLOR" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inventory and monitor fish statistics over time, ensuring a healthy and balanced aquatic environment and By centralizing all sensor data into one convenient app, we help aquarium enthusiasts stay informed and proactive."
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                style="@style/TEXT_COLOR"/>
+
+            <!-- Mission Statement -->
+            <TextView
+                style="@style/TEXT_COLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Our Mission"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/TEXT_COLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Our mission is to empower aquarium enthusiasts and professionals by providing real-time, accurate data from various sensors, ensuring optimal living conditions for aquatic life. We strive to enhance aquarium care through technology, making it easier to monitor water quality, temperature, pH levels, and other essential parameters, helping users create and maintain a thriving aquatic environment."
+                android:textSize="16sp" />
+
+            <!-- Team Section -->
+            <TextView
+                style="@style/TEXT_COLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Meet Our Team"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- First Profile -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_gravity="center"/>-->
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Sunil Kumar Kamat"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="sunilkrkamat45@gmail.com"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="+91 6291504159"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+
+                    <!-- Second Profile -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_marginStart="8dp">
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_gravity="center"/>-->
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Abhishek Kumar Sumant"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="abhikr2210@gmail.com"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="+91 9433027510"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Repeat for the second row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Third Profile -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:scaleType="fitCenter"-->
+<!--                            android:src="@drawable/himu"/>-->
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Himanshu Kumar Mishra"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="himanshum9812@gmail.com"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="+91 8092919812"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+
+                    <!-- Fourth Profile -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_marginStart="8dp">
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:scaleType="fitCenter"-->
+<!--                            android:src="@drawable/abhishek"/>-->
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Abhishek Kumar"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="abhi334sharma@gmail.com"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            style="@style/TEXT_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="+91 8986540618"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Footer -->
+            <TextView
+                style="@style/TEXT_COLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="Thank you for using our app!"
+                android:textColor="#666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+</ScrollView>

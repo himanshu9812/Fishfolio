@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BACKGROUND"
+    tools:context=".EditProfileActivity">
+
+
+    <!-- Semi-circle Background -->
+    <View
+        android:id="@+id/semiCircle"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        style="@style/PROFILE_HEADER_BG" />
+
+    <!-- profile pic -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/overlappingImage"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/semiCircle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/profilephoto"
+        android:scaleType="centerCrop"/>
+
+    <ImageButton
+        android:id="@+id/editProfilePic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="9dp"
+        android:layout_alignEnd="@id/overlappingImage"
+        android:layout_alignBottom="@id/overlappingImage"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/circle"
+        android:src="@drawable/camera"
+        android:scaleType="centerInside"
+        style="@style/EDIT_PHOTO_ICON"/>
+
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Edit Profile"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="24dp"
+        style="@style/TEXT_COLOR"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="-2dp"
+        android:orientation="vertical">
+
+
+        <!-- username -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                style="@style/TEXT_COLOR"/>
+
+            <EditText
+                android:id="@+id/etFullname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                style="@style/PROFILE_TEXTBOX_BG"/>
+        </LinearLayout>
+
+
+        <!-- Gender and Age in Same Row -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            style="@style/PROFILE_TEXTBOX_BG">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                style="@style/TEXT_COLOR"/>
+
+            <CheckBox
+                android:id="@+id/chMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male"
+                android:textSize="18sp"
+                style="@style/GENDER_CHECKBOX"/>
+
+            <CheckBox
+                android:id="@+id/chFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                style="@style/GENDER_CHECKBOX"/>
+        </LinearLayout>
+
+
+        <!-- Log Out Button -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:padding="14dp"
+            android:text="Update"
+            android:backgroundTint="#0074F0"
+            android:textStyle="bold"
+            style="@style/TEXT_COLOR"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

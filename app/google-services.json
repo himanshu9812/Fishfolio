@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "109572466982",
+    "project_id": "the-fishfolio",
+    "storage_bucket": "the-fishfolio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109572466982:android:f953498db2390380e479e7",
+        "android_client_info": {
+          "package_name": "com.example.fishfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUtXWgH8hN6tcGqfG2m4dLwAF2EcAMtBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

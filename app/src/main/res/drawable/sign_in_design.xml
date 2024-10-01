@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="100dp"
+    android:viewportWidth="300"
+    android:viewportHeight="100">
+
+    <!-- Define the wavy path here -->
+    <path
+        android:fillColor="#2196F3"
+        android:strokeColor="#52B6FC"
+        android:strokeWidth="2"
+        android:pathData="M0,50 Q50,30 100 ,50 T200,50 T300,50 V100 H0 Z"/>
+</vector>
+
